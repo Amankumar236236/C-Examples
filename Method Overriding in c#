@@ -1,0 +1,29 @@
+using System;
+
+public class BaseClass 
+{
+    public virtual void print()
+    {
+        Console.WriteLine("i am base class method");
+    }
+    
+}
+
+ class ChildClass : BaseClass
+{
+    public override void print()
+    {
+       Console.WriteLine("i am child class method"); 
+    }
+    
+}
+
+class Program
+{
+    public static void Main()
+    {
+        BaseClass B1 = new ChildClass();
+        B1.print();
+    }
+    
+}
